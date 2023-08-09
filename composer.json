@@ -1,0 +1,35 @@
+{
+  "name": "maris/symfony-location-bundle",
+  "description": "Пакет добавляет возможность сохранения географических координат на карте в базе данных.",
+  "license": "MIT",
+  "version": "0.0.1",
+  "type": "symfony-bundle",
+  "authors": [
+    {
+      "name": "Марисов Николай Андреевич",
+      "email": "marisov123456789@mail.ru"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "ext-json": "*",
+    "symfony/config": "^6.0",
+    "symfony/dependency-injection": "^6.0",
+    "doctrine/orm": "^2.0",
+    "doctrine/doctrine-bundle": "^2.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Maris\\Symfony\\Location\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Maris\\Symfony\\Location\\Test\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "mjaschen/phpgeo": "*"
+  }
+}
