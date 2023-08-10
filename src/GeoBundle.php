@@ -1,15 +1,15 @@
 <?php
 
-namespace Maris\Symfony\Location;
+namespace Maris\Symfony\Geo;
 
-use Maris\Symfony\Location\DependencyInjection\LocationExtension;
+use Maris\Symfony\Geo\DependencyInjection\GeoExtension;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
-class LocationBundle extends AbstractBundle
+class GeoBundle extends AbstractBundle
 {
     public function getContainerExtension(): ?ExtensionInterface
     {
-        return new LocationExtension();
+        return new GeoExtension();
     }
 }

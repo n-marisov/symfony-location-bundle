@@ -1,13 +1,13 @@
 <?php
 
-namespace Maris\Symfony\Location\DependencyInjection;
+namespace Maris\Symfony\Geo\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class LocationExtension extends Extension
+class GeoExtension extends Extension
 {
 
     public function load(array $configs, ContainerBuilder $container)

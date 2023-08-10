@@ -1,5 +1,5 @@
 {
-  "name": "maris/symfony-location-bundle",
+  "name": "maris/symfony-geo-bundle",
   "description": "Пакет добавляет возможность сохранения географических координат на карте в базе данных.",
   "license": "MIT",
   "version": "0.0.1",
@@ -20,12 +20,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Maris\\Symfony\\Location\\": "src/"
+      "Maris\\Symfony\\Geo\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Maris\\Symfony\\Location\\Test\\": "tests/"
+      "Maris\\Symfony\\Geo\\Test\\": "tests/"
     }
   },
   "require-dev": {

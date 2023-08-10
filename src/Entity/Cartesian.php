@@ -1,6 +1,7 @@
 <?php
 
-namespace Maris\Symfony\Location\Entity;
+namespace Maris\Symfony\Geo\Entity;
+
 
 /**
  * Точка в Декартовой системе координат.
@@ -22,6 +23,5 @@ class Cartesian
         $this->y = $y;
         $this->z = $z;
     }
-
 
 }

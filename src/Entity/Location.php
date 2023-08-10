@@ -1,7 +1,8 @@
 <?php
 
-namespace Maris\Symfony\Location\Entity;
+namespace Maris\Symfony\Geo\Entity;
 
+use JsonSerializable;
 use Stringable;
 
 /**
@@ -16,7 +17,7 @@ use Stringable;
  * удаляется лишние круги, таким образом всегда выполняется тождество -180 <= $longitude <= 180.
  *
  */
-final class Location implements Stringable
+final class Location implements Stringable, JsonSerializable
 {
     /**
      * Объект без широты и долготы не имеет смысла,
@@ -116,4 +117,11 @@ final class Location implements Stringable
         return implode(",",[ $this->latitude, $this->longitude ]);
     }
 
+    /**
+     * @inheritDoc
+     */
+    public function jsonSerialize(): array
+    {
+        return [ $this->longitude, $this->latitude ];
+    }
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace Maris\Symfony\Location\Interfaces;
+namespace Maris\Symfony\Geo\Interfaces;
 
-use Maris\Symfony\Location\Entity\Location;
+use Maris\Symfony\Geo\Entity\Location;
 
 /**
  * Интерфейс для объектов способных возвращать

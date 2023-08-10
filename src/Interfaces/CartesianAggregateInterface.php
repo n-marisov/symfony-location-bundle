@@ -1,8 +1,8 @@
 <?php
 
-namespace Maris\Symfony\Location\Interfaces;
+namespace Maris\Symfony\Geo\Interfaces;
 
-use Maris\Symfony\Location\Entity\Cartesian;
+use Maris\Symfony\Geo\Entity\Cartesian;
 
 /**
  * Интерфейс для объектов способных возвращать
