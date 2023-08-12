@@ -4,8 +4,8 @@ namespace Maris\Symfony\Geo\Entity;
 
 use JsonSerializable;
 
-use Maris\Symfony\Interfaces\Geo\Model\LocationAggregateInterface;
-use Maris\Symfony\Interfaces\Geo\Model\LocationInterface;
+use Maris\Interfaces\Geo\Model\LocationAggregateInterface;
+use Maris\Interfaces\Geo\Model\LocationInterface;
 use Stringable;
 
 /**

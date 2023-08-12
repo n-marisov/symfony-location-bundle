@@ -3,7 +3,7 @@
 namespace Maris\Symfony\Geo\Entity;
 
 use JsonSerializable;
-use Maris\Symfony\Interfaces\Geo\Model\BoundsInterface;
+use Maris\Interfaces\Geo\Model\BoundsInterface;
 
 class Bounds implements JsonSerializable,BoundsInterface
 {

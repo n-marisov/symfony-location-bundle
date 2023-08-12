@@ -2,7 +2,7 @@
 
 namespace Maris\Symfony\Geo\Entity;
 
-use Maris\Symfony\Interfaces\Geo\Model\GeometryInterface;
+use Maris\Interfaces\Geo\Model\GeometryInterface;
 
 abstract class Geometry implements GeometryInterface
 {

@@ -1138,7 +1138,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/n-marisov/geo-interfaces.git",
-                "reference": "757feffbecbb03fc7ec902072533952f3c7a2645"
+                "reference": "fcb8f4e914ffe9c7973ec468de008c0746d157d6"
             },
             "require": {
                 "php": ">=8.1"
@@ -1147,7 +1147,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Maris\\Symfony\\Interfaces\\Geo\\": "src/"
+                    "Maris\\Interfaces\\Geo\\": "src/"
                 }
             },
             "license": [
@@ -1160,7 +1160,7 @@
                 }
             ],
             "description": "Набор интерфейсов для географических сервисов.",
-            "time": "2023-08-12T12:51:37+00:00"
+            "time": "2023-08-12T14:45:04+00:00"
         },
         {
             "name": "psr/cache",

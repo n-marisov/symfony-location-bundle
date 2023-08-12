@@ -3,7 +3,7 @@
 namespace Maris\Symfony\Geo\Entity;
 
 
-use Maris\Symfony\Interfaces\Geo\Model\CartesianInterface;
+use Maris\Interfaces\Geo\Model\CartesianInterface;
 
 /**
  * Точка в Декартовой системе координат.
