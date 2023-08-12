@@ -3,10 +3,12 @@
 namespace Maris\Symfony\Geo\Entity;
 
 
+use Maris\Symfony\Interfaces\Geo\Model\CartesianInterface;
+
 /**
  * Точка в Декартовой системе координат.
  */
-class Cartesian
+class Cartesian implements CartesianInterface
 {
     protected float $x;
     protected float $y;
@@ -76,6 +78,16 @@ class Cartesian
     {
         $this->z = $z;
         return $this;
+    }
+
+    /***
+     * Вычисляет радиус, который использовался для
+     * создания объекта.
+     * @return float
+     */
+    public function calculateRadius():float
+    {
+        return sqrt($this->getX() ** 2 + $this->getY() ** 2 + $this->getZ() ** 2);
     }
 
 

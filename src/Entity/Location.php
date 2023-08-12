@@ -3,7 +3,9 @@
 namespace Maris\Symfony\Geo\Entity;
 
 use JsonSerializable;
-use Maris\Symfony\Geo\Interfaces\LocationAggregateInterface;
+
+use Maris\Symfony\Interfaces\Geo\Model\LocationAggregateInterface;
+use Maris\Symfony\Interfaces\Geo\Model\LocationInterface;
 use Stringable;
 
 /**
@@ -18,7 +20,7 @@ use Stringable;
  * удаляется лишние круги, таким образом всегда выполняется тождество -180 <= $longitude <= 180.
  *
  */
-final class Location implements Stringable, JsonSerializable,LocationAggregateInterface
+final class Location implements Stringable, JsonSerializable,LocationAggregateInterface,LocationInterface
 {
     /**
      * Объект без широты и долготы не имеет смысла,

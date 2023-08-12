@@ -16,13 +16,20 @@
     "symfony/config": "^6.0",
     "symfony/dependency-injection": "^6.0",
     "doctrine/orm": "^2.0",
-    "doctrine/doctrine-bundle": "^2.8"
+    "doctrine/doctrine-bundle": "^2.8",
+    "maris/geo-interfaces": "dev-master"
   },
   "autoload": {
     "psr-4": {
       "Maris\\Symfony\\Geo\\": "src/"
     }
   },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/n-marisov/geo-interfaces.git"
+    }
+  ],
   "autoload-dev": {
     "psr-4": {
       "Maris\\Symfony\\Geo\\Test\\": "tests/"

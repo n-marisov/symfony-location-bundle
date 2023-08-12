@@ -3,32 +3,33 @@
 namespace Maris\Symfony\Geo\Entity;
 
 use JsonSerializable;
+use Maris\Symfony\Interfaces\Geo\Model\BoundsInterface;
 
-class Bounds implements JsonSerializable
+class Bounds implements JsonSerializable,BoundsInterface
 {
     /**
      * Крайняя северная координата объекта.
-     * @var float|null
+     * @var float
      */
-    protected ?float $north = null;
+    protected float $north;
 
     /**
      * Крайняя западная координата объекта.
-     * @var float|null
+     * @var float
      */
-    protected ?float $west = null;
+    protected float $west;
 
     /**
      * Крайняя южная координата объекта.
-     * @var float|null
+     * @var float
      */
-    protected ?float $south = null;
+    protected float $south;
 
     /**
      * Крайняя восточная координата объекта.
-     * @var float|null
+     * @var float
      */
-    protected ?float $east = null;
+    protected float $east;
 
     /**
      * По умолчанию границы всей планеты.
@@ -53,4 +54,38 @@ class Bounds implements JsonSerializable
     {
         return [ $this->north, $this->west, $this->south, $this->east ];
     }
+
+    /**
+     * @return float
+     */
+    public function getNorth(): float
+    {
+        return $this->north;
+    }
+
+    /**
+     * @return float
+     */
+    public function getWest(): float
+    {
+        return $this->west;
+    }
+
+    /**
+     * @return float
+     */
+    public function getSouth(): float
+    {
+        return $this->south;
+    }
+
+    /**
+     * @return float
+     */
+    public function getEast(): float
+    {
+        return $this->east;
+    }
+
+
 }

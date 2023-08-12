@@ -2,9 +2,9 @@
 
 namespace Maris\Symfony\Geo\Entity;
 
-use Maris\Symfony\Geo\Interfaces\BoundsAggregateInterface;
+use Maris\Symfony\Interfaces\Geo\Model\GeometryInterface;
 
-abstract class Geometry implements BoundsAggregateInterface
+abstract class Geometry implements GeometryInterface
 {
     protected ?int $id = null;
 
